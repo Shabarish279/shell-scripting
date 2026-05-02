@@ -18,6 +18,15 @@ This repository contains useful shell scripts for DevOps practice.
 - Alerts when disk usage exceeds a defined threshold
 - Performs cleanup of temporary files to maintain system health
 
+### 4. Daily System Report Script
+- Collects system metrics (disk, memory, CPU)  
+- Displays top resource-consuming processes  
+- Generates a formatted daily report  
+- Sends the report via email to a configured recipient  
+- Designed to run automatically using cron  
+
+---
+
 ## How to Run
 
 chmod +x script.sh
