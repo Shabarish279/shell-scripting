@@ -23,3 +23,72 @@ This repository contains useful shell scripts for DevOps practice.
 ```bash
 chmod +x script.sh
 ./script.sh
+
+## Email Setup (Required for Report Script)
+
+Install mail utility:
+
+Ubuntu / Debian
+
+```bash
+sudo apt update
+sudo apt install mailutils -y
+```
+
+Amazon Linux / RHEL
+
+```bash
+sudo yum install mailx -y
+```
+
+Test email:
+
+```bash
+echo "Test email from server" | mail -s "Test Mail" your-email@example.com
+```
+
+## Cron Setup (Automation)
+
+Open crontab:
+
+```bash
+crontab -e
+```
+
+Add this line (runs every day at 9 AM):
+
+```bash
+0 9 * * * /home/ubuntu/daily_report.sh
+```
+
+## Cron Format
+
+```
+* * * * *
+| | | | |
+| | | | └── Day of week (0 - 7)
+| | | └──── Month (1 - 12)
+| | └────── Day of month (1 - 31)
+| └──────── Hour (0 - 23)
+└────────── Minute (0 - 59)
+```
+
+## Example Schedules
+
+Run every day at 9 AM:
+
+```bash
+0 9 * * *
+```
+
+Run every hour:
+
+```bash
+0 * * * *
+```
+
+Run every 5 minutes:
+
+```bash
+*/5 * * * *
+```
