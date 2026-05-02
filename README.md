@@ -30,6 +30,7 @@ This repository contains useful shell scripts for DevOps practice.
 ## How to Run
 
 chmod +x script.sh
+
 ./script.sh
 
 ## Email Setup (Required for Report Script)
