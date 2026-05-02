@@ -43,17 +43,38 @@ Test email:
 echo "Test email from server" | mail -s "Test Mail" your-email@example.com
 
 
+
 ## Cron Setup (Automation)
 
 Open crontab:
 
 crontab -e
 
-
 Add this line (runs every day at 9 AM):
 
 0 9 * * * /home/ubuntu/daily_report.sh
 
+## Cron Format
+
+* * * * *
+| | | | |
+| | | | └── Day of week (0 - 7)
+| | | └──── Month (1 - 12)
+| | └────── Day of month (1 - 31)
+| └──────── Hour (0 - 23)
+└────────── Minute (0 - 59)
+
+## Example Schedules
+
+Run every day at 9 AM:
+
+0 9 * * *
+
+Run every hour:
+
+0 * * * *
+
 Run every 5 minutes:
 
 */5 * * * *
+
