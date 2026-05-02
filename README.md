@@ -60,9 +60,9 @@ Open crontab:
 
 crontab -e
 
-Add this line (runs every day at 9 AM):
+Add this line (runs every day at 9 AM and 9 PM):
 
-0 9 * * * /home/ubuntu/daily_report.sh
+0 9,21 * * * /home/ubuntu/daily_report.sh
 
 ## Example Schedules
 
