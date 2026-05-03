@@ -1,9 +1,5 @@
 #!/bin/bash
 
-set -x
-set -e
-set -o pipefail
-
 SOURCE_DIR="/home/user/data"
 BACKUP_DIR="/home/user/backups"
 
